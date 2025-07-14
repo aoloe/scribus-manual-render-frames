@@ -7,7 +7,7 @@ Each source is defined in an XML file.
 - In the source code the files are in `resources/editorconfig/`
 - When installed, the files are in `share/scribus/editorconfig/`
 
-If you want to create
+If you want to create a new type of render frame take inspiration from one of the existing ones and use it to create your own XML file.
 
 ### Creating a fake renderer
 
