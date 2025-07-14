@@ -1,5 +1,13 @@
 # Scribus render frames
 
+## Tweaking the render frames
+
+If you want to configure more than what the Render Frame exposes to you, you can always create a new type of render frame by duplicating and slightly renaming one of the existing ones.
+
+As an example, you can do that for PdfLatex render frame that need a different preamble.
+
+The files to be modified are in the Scribus installation folder, under `share/scribus/editorconfig/`.
+
 ## Defining render frame sources
 
 Each source is defined in an XML file.
