@@ -8,6 +8,20 @@ As an example, you can do that for PdfLatex render frame that need a different p
 
 The files to be modified are in the Scribus installation folder, under `share/scribus/editorconfig/`.
 
+## Troubleshooting
+
+By default, if you don't have pdflatex installed and _correctly_ configured, Scribus will give you the error "The application "pdflatex --interaction nonstopmode" failed to start! Please check the path: " and the frame will have a big blue cross on it with the text "Render Error".
+
+There are four things you can do:
+
+- If you want to use _pdflatex_ and _LaTeX_ is not installed, you need to install it.
+- If _pdflatex_ is installed but Scribus can't find it, check that it is correctly installed and / or go to _File > Preferences_ in the _External Tools_ section, and change the command to reflect your installation.
+- If you want to use a different tool than LaTeX (as an exemple LilyPond, for creating music scores), in the _External Tools_ section of _File > Preferences_ move that tool to the first place in the list, so that it's the default one.
+- Again, if you want to use a different tool than _LaTeX_, but only for one single usage, use the context menu on the _Render Frame_, trigger _Edit Source_, and choose the right _Program_.
+
+If you see a red cross and the name of the generated PDF that should be rendered, then Ghostscript is not _correctly_ installed or configured.  
+Make sure that Ghostscript is correctly installed and that Scribus is correctly configured to use it by having a look at the _Post Script Interpreter_ in the _External Tools_ section of _File > Preferences_. 
+
 ## Defining render frame sources
 
 Each source is defined in an XML file.
